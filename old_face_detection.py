@@ -1,7 +1,10 @@
+# References used:
+# https://towardsdatascience.com/face-detection-in-2-minutes-using-opencv-python-90f89d7c0f81
+
 import cv2
 
 cap = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier('xml_files/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('files/haarcascade_frontalface_default.xml')
 
 if not cap.isOpened():
     print("Cannot open camera")
