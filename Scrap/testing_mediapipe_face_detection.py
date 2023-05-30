@@ -18,9 +18,9 @@ with mp_face_detection.FaceDetection(
     # To improve performance, optionally mark the image as not writeable to
     # pass by reference.
     image.flags.writeable = False
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = face_detection.process(image)
-    image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     height, width, _ = image.shape
     try:
       x = trunc(results.detections[0].location_data.relative_bounding_box.xmin * width)
