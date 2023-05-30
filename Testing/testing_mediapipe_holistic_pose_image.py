@@ -8,7 +8,7 @@ mp_holistic.POSE_CONNECTIONS
 
 mp_drawing.DrawingSpec(color=(0, 0, 255), thickness=2, circle_radius=2)
 
-image_path = 'image_before_drawing_2.jpg'
+image_path = '../Extra_Files/image_before_drawing_2.jpg'
 
 # Initiate holistic model
 with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
