@@ -2,3 +2,6 @@
 ## Main Modules Used
 - mediapipe
 - python-opencv
+- dlib
+- PIL
+- numpy
