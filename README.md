@@ -5,3 +5,5 @@
 - dlib
 - PIL
 - numpy
+- transformers
+- pytorch
