@@ -2,7 +2,6 @@
 # https://medium.com/geekculture/using-openpose-library-in-python-with-openpose-tensorflow-and-opencv-10a5496c359a
 
 import cv2 as cv
-import numpy as np
 
 BODY_PARTS = {
     "Nose": 0,
@@ -49,7 +48,8 @@ POSE_PAIRS = [
 image_width = 600
 image_height = 600
 
-net = cv.dnn.readNetFromTensorflow("files/graph_opt.pb")
+image_path = '../Extra_Files/image_after_drawing_1.jpg'
+net = cv.dnn.readNetFromTensorflow(image_path)
 
 threshold = 0.2
 
